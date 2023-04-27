@@ -1,0 +1,163 @@
+/* Global Styles */
+
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+}
+body {
+    background-image: url('pexel.jpg');
+    background-size: cover;
+  }
+  
+
+body {
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 1em;
+    line-height: 1.6em;
+    color: #ffffff;
+
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: #b8d1d9;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #d1ebf3;
+    text-decoration: underline;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+
+#header {
+    position: relative;
+    padding: 8em 0 6em 0;
+    text-align: center;
+    z-index: 1;
+}
+
+#header h1 {
+    font-size: 5em;
+    font-weight: 700;
+    margin: 0 0 0.5em 0;
+    color: #308cb7;
+}
+
+#header p {
+    font-size: 1.5em;
+    margin-bottom: 2.5em;
+    color: #ffffff;
+}
+
+#header nav {
+    position: absolute;
+    bottom: -45px;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%);
+    transform: translate(-50%, 0%);
+}
+
+#header nav ul li {
+    display: inline-block;
+    margin: 0 1em;
+}
+
+#header nav ul li a {
+    display: block;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    background: rgba(193, 223, 223, 0.625);
+    border-radius: 50%;
+    color: #0022ffc4;
+    transition: background-color 0.25s ease-in-out;
+}
+
+#header nav ul li a:hover {
+    color: #ec1f1f;
+}
+
+#header nav ul li a.icon {
+    position:relative;
+}
+
+#header nav ul li a.icon:before {
+    font: size 10px;;
+    top: 10px;;
+}
+
+#header nav ul li a.icon.fa-github:before {
+    content: "\f09b";
+}
+
+#header nav ul li a.icon.fa-facebook:before {
+    content: "\f09a";
+}
+
+#header nav ul li a.icon.fa-envelope-o:before {
+    content: "\f003";
+}
+
+#header nav ul li a.icon.fa-instagram:before {
+    content: "\f16d";
+}
+
+/* Footer */
+
+#footer {
+    text-align: center;
+    padding: 6em 0;
+    font-size: 1.2em;
+   
+}
+
+#footer a {
+    color: #b2db1e;
+    text-decoration: none;
+}
+
+#footer a:hover {
+    color: #00c3ff;
+    text-decoration: underline;
+}
+
+/* Loading */
+
+.loading #bg {
+    opacity: 0;
+}
+
+.loading #overlay {
+    opacity: 1;
+}
+
+.loading #header {
+    opacity: 0;
+}
+
+.loading #main {
+    opacity: 0;
+}
+
+/* IE8 and Lower Styles */
+
+@media screen and (max-width: 980px) {
+
+    #header {
+        padding: 6em 0 4em 
+    }
+}
